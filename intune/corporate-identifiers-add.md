@@ -35,7 +35,7 @@ As an Intune admin, you can identify devices as corporate-owned to refine manage
 A device is identified as corporate-owned if any of the following conditions are true:
 
 - Enrolled with a [device enrollment manager](device-enrollment-manager-enroll.md) account (all platforms)
-- Enrolled with the Apple [Device Enrollment Program](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md), or [Apple Configurator](apple-configurator-enroll-ios.md) (iOS only)
+0- Enrolled with the Apple [Device Enrollment Program](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md), or [Apple Configurator](apple-configurator-enroll-ios.md) (iOS only)
 - [Identified as corporate-owned before enrollment](#identify-corporate-owned-devices-with-imei-or-serial-number) with an international mobile equipment identifier (IMEI) numbers (all platforms with IMEI numbers) or serial number (iOS and Android)
 - Registered in Azure Active Directory or Enterprise Mobility + Security as a Windows 10 Enterprise device
 - The device's properties list [device ownership as corporate](#change-device-ownership)
@@ -50,7 +50,7 @@ As an Intune admin, you can create and import a comma-separated value (.csv) fil
 [Learn how to find your Android device serial number](https://support.google.com/store/answer/3333000).
 
 ## Add corporate identifiers
-To create the list, create a two-column, comma-separated value (.csv) list without a header. Add the IMEI or serial numbers in the left column, and the details in the right column. Only one type of ID, IMEI or serial number, can be imported in a single .csv file. Details are limited to 128 characters and are for administrative use only. Details aren't displayed on the device. The current limit is 500 rows per .csv file.
+To create the list, create a two-column, comma-separated value (.csv) list without a header. Add the IMEI or serial numbers in the left column, and the details in the right column. Only one type of ID, IMEI or serial number, can be imported in a single .csv file. Details are limited to 128 characters and are for administrative use only. Details aren't displayed on the device. The current limit is 5,000 rows per .csv file.
 
 **Upload a .csv file that has serial numbers** – Create a two-column, comma-separated value (.csv) list without a header, and limit the list to 5,000 devices or 5 MB per .csv file.
 
