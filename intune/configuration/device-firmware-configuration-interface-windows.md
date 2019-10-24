@@ -171,15 +171,7 @@ You're now ready to wipe the device. Once the device is wiped, delete the Autopi
 
 ### Recover
 
-If you wipe a device, and delete the Autopilot record before unlocking the UEFI (BIOS) menus, then the menus remain locked. Intune can't send profile updates to unlock it. To unlock the device, you can:
-
-- **Option 1**: Ask your CSP or OEM-direct device vendor to re-register the device with Autopilot. Re-enroll it in Intune to reapply the Autopilot and DFCI profiles.
-
-  Then, unlock the UEFI menus using the steps in [retire the device](#retire) (in this article).
-
-- **Option 2**: Open the UEFI (BIOS) menu, and select a recovery option. Confirm the device isn't registered for DFCI management, and unlock the menu. Recovery options leave all UEFI (BIOS) settings to the values in the last Intune DFCI profile.
-
-  Then, unlock the UEFI menus using the steps in [retire the device](#retire) (in this article).
+If you wipe a device, and delete the Autopilot record before unlocking the UEFI (BIOS) menus, then the menus remain locked. Intune can't send profile updates to unlock it. To unlock the device, open the UEFI (BIOS) menu, and refresh management from network. Recovery will unlock the UEFI(BIOS) menus, but will leave all UEFI (BIOS) settings set to the values in the last Intune DFCI profile.
 
 ## End user impact
 
